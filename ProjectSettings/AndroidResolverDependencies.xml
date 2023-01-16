@@ -19,6 +19,8 @@
     <package>com.google.firebase:firebase-common:19.5.0</package>
     <package>com.google.firebase:firebase-config:20.0.4</package>
     <package>com.google.firebase:firebase-config-unity:7.2.0</package>
+    <package>com.google.firebase:firebase-crashlytics:17.4.1</package>
+    <package>com.google.firebase:firebase-crashlytics-unity:7.2.0</package>
     <package>com.google.firebase:firebase-database:19.7.0</package>
     <package>com.google.firebase:firebase-database-unity:7.2.0</package>
     <package>com.google.firebase:firebase-dynamic-links:19.1.1</package>
@@ -27,8 +29,8 @@
     <package>com.google.firebase:firebase-firestore-unity:7.2.0</package>
     <package>com.google.firebase:firebase-functions:19.2.0</package>
     <package>com.google.firebase:firebase-functions-unity:7.2.0</package>
-    <package>com.google.firebase:firebase-iid:21.1.0</package>
-    <package>com.google.firebase:firebase-instance-id-unity:7.2.0</package>
+    <package>com.google.firebase:firebase-installations:16.3.5</package>
+    <package>com.google.firebase:firebase-installations-unity:7.2.0</package>
     <package>com.google.firebase:firebase-messaging:21.1.0</package>
     <package>com.google.firebase:firebase-messaging-unity:7.2.0</package>
     <package>com.google.firebase:firebase-storage:19.2.2</package>
@@ -45,6 +47,8 @@
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/7.2.0/firebase-auth-unity-7.2.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-config-unity/7.2.0/firebase-config-unity-7.2.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-config-unity/7.2.0/firebase-config-unity-7.2.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/7.2.0/firebase-crashlytics-unity-7.2.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/7.2.0/firebase-crashlytics-unity-7.2.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/7.2.0/firebase-database-unity-7.2.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/7.2.0/firebase-database-unity-7.2.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-dynamic-links-unity/7.2.0/firebase-dynamic-links-unity-7.2.0.aar</file>
@@ -53,14 +57,14 @@
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-firestore-unity/7.2.0/firebase-firestore-unity-7.2.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-functions-unity/7.2.0/firebase-functions-unity-7.2.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-functions-unity/7.2.0/firebase-functions-unity-7.2.0.pom</file>
-    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-instance-id-unity/7.2.0/firebase-instance-id-unity-7.2.0.aar</file>
-    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-instance-id-unity/7.2.0/firebase-instance-id-unity-7.2.0.pom</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-installations-unity/7.2.0/firebase-installations-unity-7.2.0.aar</file>
+    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-installations-unity/7.2.0/firebase-installations-unity-7.2.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/7.2.0/firebase-messaging-unity-7.2.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-messaging-unity/7.2.0/firebase-messaging-unity-7.2.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-storage-unity/7.2.0/firebase-storage-unity-7.2.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-storage-unity/7.2.0/firebase-storage-unity-7.2.0.pom</file>
-    <file>Assets/GeneratedLocalRepo/GoogleSignIn/Editor/m2repository/com/google/signin/google-signin-support/1.0.4/google-signin-support-1.0.4.aar</file>
-    <file>Assets/GeneratedLocalRepo/GoogleSignIn/Editor/m2repository/com/google/signin/google-signin-support/1.0.4/google-signin-support-1.0.4.pom</file>
+    <file>Assets/GeneratedLocalRepo/Runtime/src/Plugins/GoogleSignIn/Editor/m2repository/com/google/signin/google-signin-support/1.0.4/google-signin-support-1.0.4.aar</file>
+    <file>Assets/GeneratedLocalRepo/Runtime/src/Plugins/GoogleSignIn/Editor/m2repository/com/google/signin/google-signin-support/1.0.4/google-signin-support-1.0.4.pom</file>
   </files>
   <settings>
     <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
