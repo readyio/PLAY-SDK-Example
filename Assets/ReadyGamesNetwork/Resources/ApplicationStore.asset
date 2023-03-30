@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164026f55f87b4a4b9395d7d17454e48, type: 3}
   m_Name: ApplicationStore
   m_EditorClassIdentifier: 
-  RGNAppId: 
-  android: 0
-  iOS: 0
+  RGNProjectId: jgn5SmoqTlnmq2KtLNgC
   iosAppID: 
   appLinkPrefix: 
   isProduction: 0
@@ -22,15 +20,17 @@ MonoBehaviour:
   emulatorServerIp: 127.0.0.1
   firestorePort: :8080
   functionsPort: :5001
-  googleSignInWebClientID: 
-  googleSignInReverseClientID: 
-  firebaseAssociatedDomain: 
-  RGNMasterApiKey: 
-  RGNMasterAndroidAppID: 
-  RGNMasterIOSAppID: 
-  RGNMasterProjectId: 
-  RGNStorageURL: 
+  googleSignInWebClientIdAndroid: 905124664801-6r92b97upsrpnlmvadeqd3v178pp7oe1.apps.googleusercontent.com
+  googleSignInReverseClientIdAndroid: com.googleusercontent.apps.905124664801-6r92b97upsrpnlmvadeqd3v178pp7oe1
+  googleSignInWebClientIdiOS: 905124664801-t9fb6nn6hbnmd8ns5lqlsht53vvqs1i9.apps.googleusercontent.com
+  googleSignInReverseClientIdiOS: com.googleusercontent.apps.905124664801-t9fb6nn6hbnmd8ns5lqlsht53vvqs1i9
+  firebaseAssociatedDomain: null
+  RGNMasterApiKey: AIzaSyCGOTTKpb_3uKH1cEJRuUx2_ByMWRQ5E5w
+  RGNMasterAndroidAppID: 1:161041084576:android:9b8ec2cca273ab411e19c5
+  RGNMasterIOSAppID: 1:161041084576:ios:a8b8fb86200129af1e19c5
+  RGNMasterProjectId: readysandbox
+  RGNStorageURL: gs://readysandbox.appspot.com
   RGNFriendInviteMessage: 
-  RGNMasterMessageSenderId: 
-  RGNMasterStorageBucket: 
-  RGNMasterDatabaseUrl: 
+  RGNMasterMessageSenderId: 161041084576
+  RGNMasterStorageBucket: readysandbox
+  RGNMasterDatabaseUrl: https://readysandbox.firebaseio.com/
