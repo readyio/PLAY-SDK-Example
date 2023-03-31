@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Samples/Ready Games Network SDK. Firebase Implementation/0.1.0/UIRoot.
+      Multiple Features Example/Scenes/UIRootScene.unity
+    guid: eba1f0f9d27ea3348a2782e7f40d962c
   m_configObjects: {}
