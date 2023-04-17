@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using RGN.Impl.Firebase;
 using RGN.Modules.Messaging;
 using RGN.UI;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,7 @@ namespace RGN.Samples
     public class UIRoot : IUIScreen, IUserProfileClient, IVirtualItemsExampleClient
     {
         [SerializeField] private CanvasGroup _canvasGroup;
+        [SerializeField] private TextMeshProUGUI _titleText;
         [SerializeField] private Button _loginButton;
         [SerializeField] private Button _exploreUserProfileButton;
         [SerializeField] private Button _exploreVirtualItemsButton;
@@ -21,6 +23,7 @@ namespace RGN.Samples
         public override void PreInit(IRGNFrame rgnFrame)
         {
             base.PreInit(rgnFrame);
+            _titleText.text = Application.productName;
             _loginButton.onClick.AddListener(OnLoginButtonClick);
             _exploreUserProfileButton.onClick.AddListener(OnExploreUserProfileButtonClick);
             _exploreVirtualItemsButton.onClick.AddListener(OnExploreVirtualItemsButtonClick);
