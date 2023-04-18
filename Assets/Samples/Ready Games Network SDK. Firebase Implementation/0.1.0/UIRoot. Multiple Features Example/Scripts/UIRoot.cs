@@ -33,7 +33,6 @@ namespace RGN.Samples
             _fullScreenLoadingIndicator.SetEnabled(true);
             SetUserLoggedIn(false);
             RGNCore.I.AuthenticationChanged += OnAuthenticationChanged;
-            MessagingModule.I.MessageReceived += OnMessageReceived;
         }
         public override Task InitAsync()
         {
@@ -50,7 +49,6 @@ namespace RGN.Samples
             _exploreVirtualItemsButton.onClick.RemoveListener(OnExploreVirtualItemsButtonClick);
             _exploreCurrenciesButton.onClick.RemoveListener(OnExploreCurrenciesButtonClick);
             _settingsButton.onClick.RemoveListener(OnSettingsButtonClick);
-            MessagingModule.I.MessageReceived += OnMessageReceived;
             RGNCore.I.AuthenticationChanged -= OnAuthenticationChanged;
         }
 
@@ -129,10 +127,6 @@ namespace RGN.Samples
             _exploreUserProfileButton.gameObject.SetActive(loggedInWithEmail);
             _exploreVirtualItemsButton.gameObject.SetActive(loggedInWithEmail);
             _exploreCurrenciesButton.gameObject.SetActive(loggedInWithEmail);
-        }
-        private void OnMessageReceived(Message message)
-        {
-            Debug.Log("On message received: " + message.Id + ", body: " + message.Body);
         }
     }
 }

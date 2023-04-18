@@ -2,12 +2,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using RGN.Impl.Firebase;
 using RGN.Modules.Inventory;
+using RGN.Modules.Messaging;
 using RGN.UI;
 using UnityEngine;
 
 namespace RGN.Samples
 {
-    public class InventoryExample : IUIScreen
+    public class InventoryExample : IUIScreen, IMessageReceiver
     {
         [SerializeField] private CanvasGroup _canvasGroup;
         [SerializeField] private LoadingIndicator _fullScreenLoadingIndicator;
@@ -26,12 +27,14 @@ namespace RGN.Samples
             _inventoryItems = new List<InventoryItemUI>();
             _pullToRefresh.RefreshRequested += ReloadVirtualItemsAsync;
             _loadMoreItemsButton.Button.onClick.AddListener(OnLoadMoreItemsButtonAsync);
+            MessagingModule.I.Subscribe(InventoryModule.ITEM_ADDED_EVENT_TOPIC, this);
         }
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
             _pullToRefresh.RefreshRequested -= ReloadVirtualItemsAsync;
             _loadMoreItemsButton.Button.onClick.RemoveListener(OnLoadMoreItemsButtonAsync);
+            MessagingModule.I.Unsubscribe(InventoryModule.ITEM_ADDED_EVENT_TOPIC, this);
         }
         protected override async void OnShow()
         {
@@ -91,6 +94,13 @@ namespace RGN.Samples
             Vector2 sizeDelta = _scrollContentRectTrasform.sizeDelta;
             _scrollContentRectTrasform.sizeDelta = new Vector2(sizeDelta.x, loadMoreItemsButtonPos + loadMoreItemsButtonHeight);
             SetUIInteractable(true);
+        }
+
+        void IMessageReceiver.OnMessageReceived(string topic, Message message)
+        {
+            Debug.Log("New message recieved: " + message + ", topic: " + topic);
+            var payload = InventoryModule.I.ParseInventoryItemData(message.Payload);
+            ToastMessage.I.Show("New inventory item added: " + payload.id);
         }
     }
 }
