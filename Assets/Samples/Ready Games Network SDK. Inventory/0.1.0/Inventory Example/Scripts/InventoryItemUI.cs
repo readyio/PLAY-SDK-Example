@@ -37,7 +37,7 @@ namespace RGN.Samples
         {
             _rgnFrame = rgnFrame;
             _inventoryItemData = inventoryItemData;
-            _virtualItem = inventoryItemData.GetItem();
+            _virtualItem = inventoryItemData.GetVirtualItem();
             _rectTransform.localPosition = new Vector3(0, -index * GetHeight(), 0);
             _inventoryItemIdText.text = inventoryItemData.id;
             _virtualItemIdText.text = _virtualItem == null ? "Virtual Item Is null" : _virtualItem.id;
