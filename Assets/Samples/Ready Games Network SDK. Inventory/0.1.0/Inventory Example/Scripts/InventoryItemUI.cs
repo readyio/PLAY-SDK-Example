@@ -37,15 +37,19 @@ namespace RGN.Samples
         {
             _rgnFrame = rgnFrame;
             _inventoryItemData = inventoryItemData;
-            _virtualItem = inventoryItemData.GetItem();
+            _virtualItem = inventoryItemData.GetVirtualItem();
             _rectTransform.localPosition = new Vector3(0, -index * GetHeight(), 0);
             _inventoryItemIdText.text = inventoryItemData.id;
-            _virtualItemIdText.text = _virtualItem.id;
+            _virtualItemIdText.text = _virtualItem == null ? "Virtual Item Is null" : _virtualItem.id;
             _quantityText.text = inventoryItemData.quantity.ToString();
-            _nameText.text = _virtualItem.name;
+            _nameText.text = _virtualItem == null ? "Virtual Item Is null" : _virtualItem.name;
+            _descriptionText.text = _virtualItem == null ? "Virtual Item Is null" : _virtualItem.description;
+            if (_virtualItem == null)
+            {
+                return;
+            }
             _createdAtText.text = DateTimeUtility.UnixTimeStampToISOLikeStringNoMilliseconds(_virtualItem.createdAt);
             _updatedAtText.text = DateTimeUtility.UnixTimeStampToISOLikeStringNoMilliseconds(_virtualItem.updatedAt);
-            _descriptionText.text = _virtualItem.description;
             _isNFTItemImage.color = _virtualItem.IsNFT() ? RGNUISettings.I.ActiveColor : Color.gray;
             _isStackableItemImage.color = _virtualItem.isStackable ? RGNUISettings.I.ActiveColor : Color.gray;
             _openVirtualItemScreenButton.onClick.AddListener(OnOpenVirtualItemScreenButtonClick);

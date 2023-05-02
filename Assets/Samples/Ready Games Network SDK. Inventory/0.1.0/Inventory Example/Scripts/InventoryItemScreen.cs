@@ -63,7 +63,7 @@ namespace RGN.Samples
         {
             var castedParams = parameters as InventoryItemScreenParameters;
             _inventoryItemData = castedParams.InventoryItemData;
-            _virtualItem = _inventoryItemData.GetItem();
+            _virtualItem = _inventoryItemData.GetVirtualItem();
             if (_inventoryItemData == null)
             {
                 Debug.LogError("The provided inventory item data is null or invalid");
