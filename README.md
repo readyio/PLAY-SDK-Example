@@ -14,7 +14,7 @@ This repository contains Unity engine demo scene for RGN SDK features.
 - Upload user avatar image
 
 ### Links
-- [RGN SDK Documentation](https://readygames.gitbook.io/ready-sdk-documentation-1/)
+- [RGN SDK Documentation](https://readygames.gitbook.io/ready-sdk-documentation/)
 - [Developers Dashboard](https://stage-dev.ready.gg/)
 - [Discord Developers Chat](https://discord.com/invite/hZsxAVMsK9)
 - [Telegram Community](https://t.me/readygamesofficial)
