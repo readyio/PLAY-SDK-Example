@@ -70,6 +70,8 @@ namespace RGN.Samples
                     break;
                 case EnumLoginState.Error:
                     ToastMessage.I.ShowError("Login Error: " + error);
+                    _canvasGroup.interactable = true;
+                    _loadingIndicator.SetEnabled(false);
                     break;
             };
             UpdateUserInfoText();
