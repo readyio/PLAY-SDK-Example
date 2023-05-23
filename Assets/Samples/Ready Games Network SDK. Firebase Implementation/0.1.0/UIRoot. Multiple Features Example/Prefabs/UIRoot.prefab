@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -260}
-  m_SizeDelta: {x: -32, y: 160}
+  m_AnchoredPosition: {x: 0, y: -320}
+  m_SizeDelta: {x: -32, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9216351503483548
 CanvasRenderer:
@@ -66,11 +66,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: With multi-platform solutions to support every type of gaming enthusiast,
-    Ready is spearheading the collective web3 gaming era. We give every developer,
-    creator, and player the power of shared ownership through blockchain technology,
-    token economy, and cross-game NFT assets, all through easy-to-use dashboards
-    and technologies hand crafted by our team.
+  m_text: Ready is leading the charge into the new age of web3 gaming with its comprehensive
+    multi-platform offerings, catering to all types of gamers. Our mission is to
+    empower each developer, creator, and player with the benefits of collective ownership
+    via blockchain technology, token economics, and cross-game NFT assets. These
+    are made accessible through intuitive dashboards and sophisticated technologies,
+    meticulously developed by our team, designed with Unity developers in mind.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

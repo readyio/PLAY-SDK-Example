@@ -245,6 +245,10 @@ namespace RGN.Samples
         }
         private void LoadUserCoinInfoAsync()
         {
+            if (_userProfile == null)
+            {
+                return;
+            }
             var currencies = _userProfile.currencies;
             for (int i = 0; i < currencies.Count; ++i)
             {
