@@ -15,7 +15,7 @@ MonoBehaviour:
   RGNProjectId: jgn5SmoqTlnmq2KtLNgC
   iosAppID: 
   appLinkPrefix: 
-  isProduction: 0
+  RGNEnvironment: 0
   usingEmulator: 0
   emulatorServerIp: 127.0.0.1
   firestorePort: :8080
