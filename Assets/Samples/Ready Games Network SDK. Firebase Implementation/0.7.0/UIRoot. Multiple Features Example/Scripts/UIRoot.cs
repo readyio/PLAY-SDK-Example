@@ -1,6 +1,5 @@
 using System.Threading.Tasks;
 using RGN.Impl.Firebase;
-using RGN.Modules.Messaging;
 using RGN.UI;
 using TMPro;
 using UnityEngine;
