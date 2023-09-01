@@ -46,10 +46,13 @@ namespace RGN.Samples
             ToastMessage.I.ShowSuccess("In app purchase successfull");
             await Task.Delay(3000);
             ToastMessage.I.Show("Adding RGN Coin to users data...");
+            string iapTransactionId = System.Guid.NewGuid().ToString();// TODO: get it from the iap plugin callback
+            string iapReceipt = System.Guid.NewGuid().ToString();// TODO: get it from the iap plugin callback
+
             bool failed = false;
             try
             {
-                var result = await CurrencyModule.I.PurchaseRGNCoinAsync(_product.uid);
+                var result = await CurrencyModule.I.PurchaseRGNCoinAsync(_product.uid, iapTransactionId, iapReceipt);
             }
             catch (System.Exception ex)
             {
