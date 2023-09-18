@@ -1,11 +1,13 @@
 <linker>
     <assembly fullname="GetReady.RGN.Impl.Firebase.Runtime" preserve="all" />
     <assembly fullname="RGNAchievement" preserve="all" />
+    <assembly fullname="RGNAnalytics" preserve="all" />
     <assembly fullname="RGNCore" preserve="all" />
     <assembly fullname="RGNCreator" preserve="all" />
     <assembly fullname="RGNCurrency" preserve="all" />
     <assembly fullname="RGNGameProgress" preserve="all" />
     <assembly fullname="RGNInventory" preserve="all" />
+    <assembly fullname="RGNLeaderboard" preserve="all" />
     <assembly fullname="RGNMatchmaking" preserve="all" />
     <assembly fullname="RGNMessaging" preserve="all" />
     <assembly fullname="RGNSignInGuest" preserve="all" />

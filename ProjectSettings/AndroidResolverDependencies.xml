@@ -7,8 +7,6 @@
     <package>com.google.firebase:firebase-auth:21.1.0</package>
     <package>com.google.firebase:firebase-auth-unity:10.6.0</package>
     <package>com.google.firebase:firebase-common:20.3.1</package>
-    <package>com.google.firebase:firebase-crashlytics-ndk:18.3.5</package>
-    <package>com.google.firebase:firebase-crashlytics-unity:10.6.0</package>
     <package>com.google.firebase:firebase-iid:21.1.0</package>
     <package>com.google.firebase:firebase-messaging:23.1.2</package>
     <package>com.google.firebase:firebase-messaging-unity:10.6.0</package>
@@ -70,9 +68,6 @@
     <file>Assets/Plugins/Android/com.google.firebase.firebase-auth-unity-10.6.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-common-20.3.1.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-components-17.1.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-18.3.5.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.3.5.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-unity-10.6.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-datatransport-18.1.7.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-encoders-17.0.0.jar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-encoders-json-18.0.0.aar</file>
@@ -91,7 +86,7 @@
     <file>Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-common-1.7.10.jar</file>
   </files>
   <settings>
-    <setting name="androidAbis" value="armeabi-v7a" />
+    <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
     <setting name="bundleId" value="io.getready.rgndemoandroid" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />

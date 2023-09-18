@@ -1,6 +1,7 @@
 using System.IO;
 using System.Threading.Tasks;
 using RGN.Impl.Firebase;
+using RGN.Model;
 using RGN.Modules.UserProfile;
 using RGN.UI;
 using TMPro;
@@ -133,7 +134,7 @@ namespace RGN.Samples
             }
             if (userProfilePicture == null)
             {
-                byte[] bytes = await UserProfileModule.I.DownloadAvatarImageAsync(userId);
+                byte[] bytes = await UserProfileModule.I.DownloadAvatarImageAsync(userId, ImageSize.Small);
 
                 if (bytes != null)
                 {

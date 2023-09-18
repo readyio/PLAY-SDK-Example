@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using RGN.Impl.Firebase;
+using RGN.Model;
 using RGN.Modules.Inventory;
 using RGN.Modules.VirtualItems;
 using RGN.UI;
@@ -117,7 +118,7 @@ namespace RGN.Samples
             }
             if (image == null)
             {
-                byte[] bytes = await VirtualItemsModule.I.DownloadImageAsync(virtualItemId);
+                byte[] bytes = await VirtualItemsModule.I.DownloadImageAsync(virtualItemId, ImageSize.Small);
 
                 if (bytes != null)
                 {
