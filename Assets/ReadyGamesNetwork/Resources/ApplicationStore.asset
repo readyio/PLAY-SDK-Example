@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ApplicationStore
   m_EditorClassIdentifier: 
   RGNProjectId: jgn5SmoqTlnmq2KtLNgC
+  RGNApiKey: 65e514b1955f3c0448216386c629725462afb17450a3858b8244277f379463be
   iosAppID: 
   appLinkPrefix: 
   RGNEnvironment: 0
