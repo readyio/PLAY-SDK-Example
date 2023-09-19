@@ -92,7 +92,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.newtonsoft-json": {
-      "version": "3.2.0",
+      "version": "3.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -181,6 +181,15 @@
         "io.getready.rgn.currency": "0.7.1"
       },
       "hash": "27700b388663bc8df5b9e90c741389d8b547784f"
+    },
+    "io.getready.rgn.analytics": {
+      "version": "https://github.com/readyio/RGNAnalytics.git#0.7.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "io.getready.rgn.core": "0.7.1"
+      },
+      "hash": "6e0ca092f72b8ef62456b33baa66e7e93857787c"
     },
     "io.getready.rgn.core": {
       "version": "https://github.com/readyio/RGNCore.git#0.7.1",
