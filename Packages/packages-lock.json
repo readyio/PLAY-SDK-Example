@@ -1,56 +1,56 @@
 {
   "dependencies": {
     "com.google.external-dependency-manager": {
-      "version": "https://github.com/readyio/ExternalDependencyManager.git#1.2.175",
+      "version": "https://github.com/readyio/ExternalDependencyManager.git#1.2.177",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "9876dfb6d5151795dbb209d90de991957a2e29a6"
+      "hash": "e4269aa3b44c33af29fc365bba5cc77b05229ca5"
     },
     "com.google.firebase.analytics": {
-      "version": "https://github.com/readyio/FirebaseAnalytics.git#10.6.0",
+      "version": "https://github.com/readyio/FirebaseAnalytics.git#10.7.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.6.0"
+        "com.google.firebase.app": "10.7.0"
       },
-      "hash": "e55afc2da9c5d60c9ac3d64176d51bc284b2e76c"
+      "hash": "b1c532f502a07e1cb02d4993162a3e4a1ac3388f"
     },
     "com.google.firebase.app": {
-      "version": "https://github.com/readyio/FirebaseApp.git#10.6.0",
+      "version": "https://github.com/readyio/FirebaseApp.git#10.7.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.google.external-dependency-manager": "1.2.175"
       },
-      "hash": "fe36569453fa059a49f37b9aab597f34bb40830a"
+      "hash": "7f2fd07a609a5418500caae73af0f31607a6aafa"
     },
     "com.google.firebase.auth": {
-      "version": "https://github.com/readyio/FirebaseAuth.git#10.6.0",
+      "version": "https://github.com/readyio/FirebaseAuth.git#10.7.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.6.0"
+        "com.google.firebase.app": "10.7.0"
       },
-      "hash": "add68375312914cb51573a352015a85ea2dc6ffa"
+      "hash": "577da28441b5e68dd84420c6c77e56bf0f0c5ff4"
     },
     "com.google.firebase.crashlytics": {
-      "version": "https://github.com/readyio/FirebaseCrashlytics.git#10.6.0",
+      "version": "https://github.com/readyio/FirebaseCrashlytics.git#10.7.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.6.0"
+        "com.google.firebase.app": "10.7.0"
       },
-      "hash": "be8f936efbd4f6ee8fa1b9579ba6ca131d10a674"
+      "hash": "039286269c41526c603e4e485ceb32a9dd6e85ca"
     },
     "com.google.firebase.messaging": {
-      "version": "https://github.com/readyio/FirebaseMessaging.git#10.6.0",
+      "version": "https://github.com/readyio/FirebaseMessaging.git#10.7.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.6.0"
+        "com.google.firebase.app": "10.7.0"
       },
-      "hash": "076e914a8f4df679e802f44ebd2d8bd42c0aab37"
+      "hash": "05fd7819a45cd00f88fb45e2b97c46feca51f492"
     },
     "com.unity.collab-proxy": {
       "version": "2.0.4",

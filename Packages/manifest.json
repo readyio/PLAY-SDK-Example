@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "com.google.external-dependency-manager": "https://github.com/readyio/ExternalDependencyManager.git#1.2.175",
-    "com.google.firebase.analytics": "https://github.com/readyio/FirebaseAnalytics.git#10.6.0",
-    "com.google.firebase.app": "https://github.com/readyio/FirebaseApp.git#10.6.0",
-    "com.google.firebase.auth": "https://github.com/readyio/FirebaseAuth.git#10.6.0",
-    "com.google.firebase.crashlytics": "https://github.com/readyio/FirebaseCrashlytics.git#10.6.0",
-    "com.google.firebase.messaging": "https://github.com/readyio/FirebaseMessaging.git#10.6.0",
+    "com.google.external-dependency-manager": "https://github.com/readyio/ExternalDependencyManager.git#1.2.177",
+    "com.google.firebase.analytics": "https://github.com/readyio/FirebaseAnalytics.git#10.7.0",
+    "com.google.firebase.app": "https://github.com/readyio/FirebaseApp.git#10.7.0",
+    "com.google.firebase.auth": "https://github.com/readyio/FirebaseAuth.git#10.7.0",
+    "com.google.firebase.crashlytics": "https://github.com/readyio/FirebaseCrashlytics.git#10.7.0",
+    "com.google.firebase.messaging": "https://github.com/readyio/FirebaseMessaging.git#10.7.0",
     "com.unity.collab-proxy": "2.0.4",
     "com.unity.ide.rider": "3.0.21",
     "com.unity.ide.visualstudio": "2.0.18",

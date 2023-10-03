@@ -1,17 +1,18 @@
 <dependencies>
   <packages>
     <package>com.google.android.gms:play-services-base:18.2.0</package>
-    <package>com.google.firebase:firebase-analytics:21.2.0</package>
-    <package>com.google.firebase:firebase-analytics-unity:10.6.0</package>
-    <package>com.google.firebase:firebase-app-unity:10.6.0</package>
-    <package>com.google.firebase:firebase-auth:21.1.0</package>
-    <package>com.google.firebase:firebase-auth-unity:10.6.0</package>
-    <package>com.google.firebase:firebase-common:20.3.1</package>
-    <package>com.google.firebase:firebase-crashlytics-ndk:18.3.5</package>
-    <package>com.google.firebase:firebase-crashlytics-unity:10.6.0</package>
+    <package>com.google.firebase:firebase-analytics:21.2.1</package>
+    <package>com.google.firebase:firebase-analytics-unity:10.7.0</package>
+    <package>com.google.firebase:firebase-app-unity:10.7.0</package>
+    <package>com.google.firebase:firebase-auth:21.2.0</package>
+    <package>com.google.firebase:firebase-auth-unity:10.7.0</package>
+    <package>com.google.firebase:firebase-common:20.3.2</package>
+    <package>com.google.firebase:firebase-crashlytics-ndk:18.3.6</package>
+    <package>com.google.firebase:firebase-crashlytics-unity:10.7.0</package>
     <package>com.google.firebase:firebase-iid:21.1.0</package>
     <package>com.google.firebase:firebase-messaging:23.1.2</package>
-    <package>com.google.firebase:firebase-messaging-unity:10.6.0</package>
+    <package>com.google.firebase:firebase-messaging-unity:10.7.0</package>
+    <package>com.google.flatbuffers:flatbuffers-java:1.12.0</package>
   </packages>
   <files>
     <file>Assets/Plugins/Android/androidx.annotation.annotation-1.5.0.jar</file>
@@ -44,35 +45,37 @@
     <file>Assets/Plugins/Android/androidx.versionedparcelable.versionedparcelable-1.1.0.aar</file>
     <file>Assets/Plugins/Android/androidx.viewpager.viewpager-1.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.datatransport.transport-api-3.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.datatransport.transport-backend-cct-3.1.8.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.datatransport.transport-runtime-3.1.8.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.datatransport.transport-backend-cct-3.1.9.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.datatransport.transport-runtime-3.1.9.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-18.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-auth-api-phone-17.4.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-base-18.2.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-basement-18.1.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-cloud-messaging-17.0.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-21.2.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-api-21.2.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-21.2.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-impl-21.2.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-21.2.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-21.2.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-21.2.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-api-21.2.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-21.2.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-impl-21.2.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-21.2.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-21.2.1.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-safetynet-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-stats-17.0.2.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-tasks-18.0.2.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.play.integrity-1.0.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.recaptcha.recaptcha-18.0.1.aar</file>
     <file>Assets/Plugins/Android/com.google.errorprone.error_prone_annotations-2.9.0.jar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-21.2.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-unity-10.6.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-21.2.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-unity-10.7.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-annotations-16.2.0.jar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-app-unity-10.6.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-auth-21.1.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-app-unity-10.7.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-auth-21.2.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-auth-interop-20.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-auth-unity-10.6.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-common-20.3.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-auth-unity-10.7.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-common-20.3.2.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-components-17.1.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-18.3.5.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.3.5.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-unity-10.6.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-18.3.6.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.3.6.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-unity-10.7.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-datatransport-18.1.7.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-encoders-17.0.0.jar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-encoders-json-18.0.0.aar</file>
@@ -83,12 +86,18 @@
     <file>Assets/Plugins/Android/com.google.firebase.firebase-installations-interop-17.1.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-measurement-connector-19.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-23.1.2.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-unity-10.6.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-unity-10.7.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.flatbuffers.flatbuffers-java-1.12.0.jar</file>
     <file>Assets/Plugins/Android/com.google.guava.listenablefuture-1.0.jar</file>
     <file>Assets/Plugins/Android/javax.inject.javax.inject-1.jar</file>
     <file>Assets/Plugins/Android/org.jetbrains.annotations-13.0.jar</file>
     <file>Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-1.7.10.jar</file>
     <file>Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-common-1.7.10.jar</file>
+    <file>Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-jdk7-1.6.0.jar</file>
+    <file>Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-jdk8-1.6.0.jar</file>
+    <file>Assets/Plugins/Android/org.jetbrains.kotlinx.kotlinx-coroutines-android-1.6.1.jar</file>
+    <file>Assets/Plugins/Android/org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm-1.6.1.jar</file>
+    <file>Assets/Plugins/Android/org.jetbrains.kotlinx.kotlinx-coroutines-play-services-1.6.0.jar</file>
   </files>
   <settings>
     <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
@@ -103,6 +112,8 @@
     <setting name="patchAndroidManifest" value="True" />
     <setting name="patchMainTemplateGradle" value="True" />
     <setting name="projectExportEnabled" value="False" />
+    <setting name="useFullCustomMavenRepoPathWhenExport" value="True" />
+    <setting name="useFullCustomMavenRepoPathWhenNotExport" value="False" />
     <setting name="useJetifier" value="True" />
   </settings>
 </dependencies>
