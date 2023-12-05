@@ -1,0 +1,84 @@
+name: Build and Release APK
+
+on:
+  push:
+    branches:
+      - '*-dev'
+    paths:
+      - 'Packages/manifest.json'
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Unity
+      uses: game-ci/unity-builder@v4
+      with:
+        unityVersion: '2020.3.48f1'
+        targetPlatform: Android
+
+    - name: Build APK
+      run: |
+        /opt/unity/Editor/Unity \
+        -batchmode \
+        -nographics \
+        -silent-crashes \
+        -logFile \
+        -projectPath ${{ github.workspace }} \
+        -buildTarget Android \
+        -executeMethod YourBuildScript.Build \
+        -quit
+
+    - name: Extract Version
+      id: extract_version
+      run: |
+        VERSION=$(grep -oP '"io.getready.rgn.core": "https://github.com/readyio/RGNCore.git#\K[0-9]+\.[0-9]+\.[0-9]+-dev\.[0-9]+' Packages/manifest.json)
+        echo "Extracted version: $VERSION"
+        echo "::set-output name=version::$VERSION"
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: APK
+        path: Builds/RgnExample.apk
+
+  release:
+    name: Create Release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Download APK
+      uses: actions/download-artifact@v3
+      with:
+        name: APK
+        path: RgnExample.apk
+
+    - name: Print the version
+      run: echo "The version is ${{ needs.build.outputs.version }}"
+
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.build.outputs.version }}
+        release_name: Release ${{ needs.build.outputs.version }}
+        body: 'Release of version ${{ needs.build.outputs.version }}'
+        draft: false
+        prerelease: false
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: RgnExample.apk
+        asset_name: RgnExample.apk
+        asset_content_type: application/vnd.android.package-archive
