@@ -227,13 +227,13 @@
       "hash": "112381f01d6c317c405408131a16a04b02c808ee"
     },
     "io.getready.rgn.impl.firebase": {
-      "version": "https://github.com/readyio/RGNImplFirebase.git#0.9.0-dev.458",
+      "version": "https://github.com/readyio/RGNImplFirebase.git#0.9.0-dev.459",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "io.getready.rgn.core": "0.9.0"
       },
-      "hash": "42f478686118be1556645a9292ad0777d4c73401"
+      "hash": "77509e7f40f231d3c476b15326983af9b4f9441d"
     },
     "io.getready.rgn.inventory": {
       "version": "https://github.com/readyio/RGNInventory.git#0.9.0-dev.458",
@@ -275,13 +275,13 @@
       "hash": "ab6c9a797bd1928c3382e8febee65e4f6532a9ea"
     },
     "io.getready.rgn.signin.email": {
-      "version": "https://github.com/readyio/RGNSignInEmail.git#0.9.0-dev.458",
+      "version": "https://github.com/readyio/RGNSignInEmail.git#0.9.0-dev.459",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "io.getready.rgn.core": "0.9.0"
       },
-      "hash": "5add06c2bc994aabb8467017552fc4cfdcd4ac48"
+      "hash": "ed8fe755a18d4bcdd81f714fc0b73d7dd8410682"
     },
     "io.getready.rgn.signin.guest": {
       "version": "https://github.com/readyio/RGNSignInGuest.git#0.9.0-dev.458",
