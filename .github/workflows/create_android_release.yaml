@@ -31,6 +31,11 @@ jobs:
         UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
         UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
       run: |
+        ls -la /
+        ls -la /opt
+        ls -la /opt/unity
+        ls -la /opt/unity/Editor
+        ls -la /opt/unity/Editor/Data
         /opt/unity/Editor/Unity \
         -batchmode \
         -nographics \
