@@ -38,7 +38,7 @@ jobs:
         -logFile \
         -projectPath ${{ github.workspace }} \
         -buildTarget Android \
-        -executeMethod YourBuildScript.Build \
+        -executeMethod BuildScript.Build \
         -quit
 
     - name: Extract Version
