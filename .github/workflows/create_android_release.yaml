@@ -62,7 +62,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: APK
-        path: ToUpload/RgnExample.apk
+        path: ToUpload/
 
     - name: Print the version
       run: echo "The version is ${{ needs.build.outputs.version }}"
