@@ -62,7 +62,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: APK
-        path: RgnExample.apk
+        path: ToUpload/RgnExample.apk
 
     - name: Print the version
       run: echo "The version is ${{ needs.build.outputs.version }}"
@@ -84,6 +84,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: RgnExample.apk
+        asset_path: ./ToUpload/RgnExample.apk
         asset_name: RgnExample.apk
         asset_content_type: application/vnd.android.package-archive
