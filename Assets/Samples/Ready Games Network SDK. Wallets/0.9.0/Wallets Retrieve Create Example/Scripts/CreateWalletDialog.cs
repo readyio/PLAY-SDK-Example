@@ -56,15 +56,15 @@ namespace RGN.Samples
             _walletsExample.SetUIInteractable(false);
             try
             {
-                var result = await WalletsModule.I.CreateWalletAsync(_passwordInputField.text);
-                if (!result.wallet_created || !result.success)
-                {
-                    ToastMessage.I.ShowError(result.error);
-                    Debug.LogError(result.error);
-                    return;
-                }
-                SetVisible(false);
-                await _walletsExample.ReloadWalletItemsAsync();
+                //var result = await WalletsModule.I.CreateWalletAsync(_passwordInputField.text);
+                //if (!result.wallet_created || !result.success)
+                //{
+                //    ToastMessage.I.ShowError(result.error);
+                //    Debug.LogError(result.error);
+                //    return;
+                //}
+                //SetVisible(false);
+                //await _walletsExample.ReloadWalletItemsAsync();
             }
             catch (System.Exception ex)
             {

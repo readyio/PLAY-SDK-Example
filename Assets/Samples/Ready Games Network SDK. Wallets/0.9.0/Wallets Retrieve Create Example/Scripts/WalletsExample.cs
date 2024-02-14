@@ -42,17 +42,19 @@ namespace RGN.Samples
 
         public async Task<string> GetPrimaryWalletAddressAsync()
         {
-            var walletsData = await WalletsModule.I.GetUserWalletsAsync();
-            if (walletsData.wallets.Length == 0)
-            {
-                return "Create Primary Wallet";
-            }
-            return walletsData.wallets[0].address;
+            //var walletsData = await WalletsModule.I.GetUserWalletsAsync();
+            //if (walletsData.wallets.Length == 0)
+            //{
+            //    return "Create Primary Wallet";
+            //}
+            //return walletsData.wallets[0].address;
+            return "Not implemented";
         }
         public async Task<bool> DoesTheUserHasPrimaryWalletAddressAsync()
         {
-            var response = await WalletsModule.I.IsUserHavePrimaryWalletAsync();
-            return response.isUserHavePrimaryWallet;
+            //var response = await WalletsModule.I.IsUserHavePrimaryWalletAsync();
+            //return response.isUserHavePrimaryWallet;
+            return false;
         }
         internal void SetUIInteractable(bool interactable)
         {
@@ -61,20 +63,20 @@ namespace RGN.Samples
         }
         internal async Task ReloadWalletItemsAsync()
         {
-            DisposeWalletItems();
-            SetUIInteractable(false);
-            var walletsData = await WalletsModule.I.GetUserWalletsAsync();
-            var wallets = walletsData.wallets;
-            for (int i = 0; i < wallets.Length; ++i)
-            {
-                WalletItem walletItem = Instantiate(_walletItemPrefab, _scrollContentRectTrasform);
-                walletItem.Init(i, wallets[i]);
-                _walletItems.Add(walletItem);
-            }
-            Vector2 sizeDelta = _scrollContentRectTrasform.sizeDelta;
-            _scrollContentRectTrasform.sizeDelta = new Vector2(sizeDelta.x, wallets.Length * _walletItemPrefab.GetHeight());
-            SetUIInteractable(true);
-            _createWalletButton.gameObject.SetActive(wallets.Length == 0);
+            //DisposeWalletItems();
+            //SetUIInteractable(false);
+            //var walletsData = await WalletsModule.I.GetUserWalletsAsync();
+            //var wallets = walletsData.wallets;
+            //for (int i = 0; i < wallets.Length; ++i)
+            //{
+            //    WalletItem walletItem = Instantiate(_walletItemPrefab, _scrollContentRectTrasform);
+            //    walletItem.Init(i, wallets[i]);
+            //    _walletItems.Add(walletItem);
+            //}
+            //Vector2 sizeDelta = _scrollContentRectTrasform.sizeDelta;
+            //_scrollContentRectTrasform.sizeDelta = new Vector2(sizeDelta.x, wallets.Length * _walletItemPrefab.GetHeight());
+            //SetUIInteractable(true);
+            //_createWalletButton.gameObject.SetActive(wallets.Length == 0);
         }
         private void OnCreateButtonClick()
         {
