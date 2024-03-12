@@ -32,11 +32,12 @@ Function UpdateVersion($newVersion, $regexToParseTheVersion) {
   }
 
   # Run Unity Method
-  & $unityExecPath -batchmode -quit -projectPath $sdkRepository -executeMethod ImportPackageSamples.ImportPackageExamples
+  Start-Process -FilePath $unityExecPath -ArgumentList "-batchmode -quit -projectPath `"$sdkRepository`" -executeMethod ImportPackageSamples.ImportPackageExamples" -NoNewWindow -Wait
   if ($LASTEXITCODE -ne 0) {
     Write-Error "Unity Editor method execution failed. Error code: $LASTEXITCODE."
     return
   }
+  Read-Host "Press Enter to continue..."
 
   # Add to Git and Commit
   git -C "$sdkRepository" add .
