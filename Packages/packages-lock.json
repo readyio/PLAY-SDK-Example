@@ -191,11 +191,11 @@
       "hash": "8b6117f23023e15b13ec6e5979451034fa6603bb"
     },
     "io.getready.rgn.core": {
-      "version": "https://github.com/readyio/RGNCore.git#0.10.0-dev.529",
+      "version": "https://github.com/readyio/RGNCore.git#0.9.2",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c24bd5dbf7f3f9e7b424b8aade9ff27839b0d26e"
+      "hash": "c374c9e947dbf281a0817789b8112dcfa93552c9"
     },
     "io.getready.rgn.currency": {
       "version": "https://github.com/readyio/RGNCurrency.git#0.9.2",
