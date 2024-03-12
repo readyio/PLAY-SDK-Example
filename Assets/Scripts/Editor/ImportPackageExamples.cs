@@ -1,6 +1,7 @@
 using Newtonsoft.Json.Linq;
 using System.IO;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public class ImportPackageSamples
 {
@@ -49,6 +50,24 @@ public class ImportPackageSamples
                 CopyDirectory(sampleFullPath, destinationPath);
             }
         }
+
+        // Find and open the UIRootScene scene file
+        string[] allSceneFiles = Directory.GetFiles(samplesPath, "*.unity", SearchOption.AllDirectories);
+        string uiRootScenePath = string.Empty;
+        foreach (var sceneFile in allSceneFiles)
+        {
+            if (Path.GetFileNameWithoutExtension(sceneFile).Equals("UIRootScene"))
+            {
+                uiRootScenePath = sceneFile;
+                break;
+            }
+        }
+
+        if (!string.IsNullOrEmpty(uiRootScenePath))
+        {
+            EditorSceneManager.OpenScene(uiRootScenePath);
+        }
+
         AssetDatabase.Refresh();
     }
 
@@ -58,7 +77,7 @@ public class ImportPackageSamples
         foreach (var file in Directory.GetFiles(sourceDir))
         {
             string destFile = Path.Combine(destinationDir, Path.GetFileName(file));
-            File.Copy(file, destFile);
+            File.Copy(file, destFile, true); // Added true to overwrite existing files
         }
         foreach (var dir in Directory.GetDirectories(sourceDir))
         {
