@@ -3,7 +3,8 @@ name: Build and Release APK
 on:
   push:
     branches:
-      - '*-dev'
+      - 'dev'
+      - 'main'
     paths:
       - 'Packages/manifest.json'
 
