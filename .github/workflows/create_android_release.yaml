@@ -41,7 +41,7 @@ jobs:
     - name: Extract Version
       id: extract_version
       run: |
-        VERSION=$(grep -oP '"io.getready.rgn.core": "https://github.com/readyio/RGNCore.git#\K[0-9]+\.[0-9]+\.[0-9]+-dev\.[0-9]+' Packages/manifest.json)
+        VERSION=$(grep -oP '"io.getready.rgn.core": "https://github.com/readyio/RGNCore.git#\K\d+\.\d+\.\d+(-[0-9A-Za-z-]+(\.\d+)*)?' Packages/manifest.json)
         echo "Extracted version: $VERSION"
         echo "version=$VERSION" >> $GITHUB_OUTPUT
 
