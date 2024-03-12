@@ -22,7 +22,6 @@ Function UpdateVersion($newVersion) {
   $projectVersionPath = Join-Path -Path $sdkRepository -ChildPath "ProjectSettings/ProjectVersion.txt"
   $unityVersion = Get-Content $projectVersionPath | Select-Object -First 1 | ForEach-Object { $_ -replace "m_EditorVersion: ", "" }
   Write-Host "Unity Version: $unityVersion"
-  Read-Host "Press Enter to continue..."
 
   # Locate Unity Executable
   $unityExecPath = "C:\Program Files\Unity\Hub\Editor\$unityVersion\Editor\Unity.exe"
