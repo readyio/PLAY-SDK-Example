@@ -5,15 +5,17 @@ using UnityEditor.SceneManagement;
 
 public class ImportPackageSamples
 {
+    private const string SAMPLES_PATH = "Assets/Samples";
+
+
     [MenuItem("Tools/Import Package Examples")]
     public static void ImportPackageExamples()
     {
-        string samplesPath = "Assets/Samples";
-        if (Directory.Exists(samplesPath))
+        if (Directory.Exists(SAMPLES_PATH))
         {
-            Directory.Delete(samplesPath, true);
+            Directory.Delete(SAMPLES_PATH, true);
         }
-        Directory.CreateDirectory(samplesPath);
+        Directory.CreateDirectory(SAMPLES_PATH);
 
         string packageCachePath = Path.Combine(Directory.GetCurrentDirectory(), "Library/PackageCache");
         string[] packageDirectories = Directory.GetDirectories(packageCachePath, "io.getready.rgn*", SearchOption.AllDirectories);
@@ -39,7 +41,7 @@ public class ImportPackageSamples
             }
             string displayName = packageJson["displayName"].ToString().Replace("/", "_");
             string version = packageJson["version"].ToString();
-            string sampleRootPath = Path.Combine(samplesPath, displayName, version);
+            string sampleRootPath = Path.Combine(SAMPLES_PATH, displayName, version);
             Directory.CreateDirectory(sampleRootPath);
             foreach (JObject sample in samples)
             {
@@ -50,7 +52,27 @@ public class ImportPackageSamples
                 CopyDirectory(sampleFullPath, destinationPath);
             }
         }
+        AssetDatabase.Refresh();
 
+        if (EditorApplication.isCompiling)
+        {
+            EditorApplication.update += WaitForCompilationToFinish;
+            return;
+        }
+        OpenUIRootScene(SAMPLES_PATH);
+    }
+
+    private static void WaitForCompilationToFinish()
+    {
+        if (!EditorApplication.isCompiling)
+        {
+            EditorApplication.update -= WaitForCompilationToFinish;
+            OpenUIRootScene(SAMPLES_PATH);
+        }
+    }
+
+    private static void OpenUIRootScene(string samplesPath)
+    {
         // Find and open the UIRootScene scene file
         string[] allSceneFiles = Directory.GetFiles(samplesPath, "*.unity", SearchOption.AllDirectories);
         string uiRootScenePath = string.Empty;
@@ -67,8 +89,6 @@ public class ImportPackageSamples
         {
             EditorSceneManager.OpenScene(uiRootScenePath);
         }
-
-        AssetDatabase.Refresh();
     }
 
     private static void CopyDirectory(string sourceDir, string destinationDir)
