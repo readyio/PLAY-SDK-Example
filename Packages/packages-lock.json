@@ -1,56 +1,56 @@
 {
   "dependencies": {
     "com.google.external-dependency-manager": {
-      "version": "https://github.com/readyio/ExternalDependencyManager.git#1.2.177",
+      "version": "https://github.com/readyio/ExternalDependencyManager.git#1.2.179",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "e4269aa3b44c33af29fc365bba5cc77b05229ca5"
+      "hash": "f72125da9427de63fdc2c3f6af102dec00ca902e"
     },
     "com.google.firebase.analytics": {
-      "version": "https://github.com/readyio/FirebaseAnalytics.git#10.7.0",
+      "version": "https://github.com/readyio/FirebaseAnalytics.git#11.9.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.7.0"
+        "com.google.firebase.app": "11.9.0"
       },
-      "hash": "b1c532f502a07e1cb02d4993162a3e4a1ac3388f"
+      "hash": "5edfc2f42adb56df7d216ad4cd3d6cc61cafc37f"
     },
     "com.google.firebase.app": {
-      "version": "https://github.com/readyio/FirebaseApp.git#10.7.0",
+      "version": "https://github.com/readyio/FirebaseApp.git#11.9.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.external-dependency-manager": "1.2.175"
+        "com.google.external-dependency-manager": "1.2.177"
       },
-      "hash": "7f2fd07a609a5418500caae73af0f31607a6aafa"
+      "hash": "31aeda8d442f138d9ed2a6278189e20bb3614bac"
     },
     "com.google.firebase.crashlytics": {
-      "version": "https://github.com/readyio/FirebaseCrashlytics.git#10.7.0",
+      "version": "https://github.com/readyio/FirebaseCrashlytics.git#11.9.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.7.0"
+        "com.google.firebase.app": "11.9.0"
       },
-      "hash": "039286269c41526c603e4e485ceb32a9dd6e85ca"
+      "hash": "f1b925ead26ffaf40e2e7eeb082d91dc45adbbe7"
     },
     "com.google.firebase.dynamic-links": {
-      "version": "https://github.com/readyio/FirebaseDynamicLinks.git#10.7.0",
+      "version": "https://github.com/readyio/FirebaseDynamicLinks.git#11.9.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.7.0"
+        "com.google.firebase.app": "11.9.0"
       },
-      "hash": "8643fa67a8313c4dc0acd3f6819259b679e308b7"
+      "hash": "57fa0f4cb7f0eae267e8cc146f1599737dd9aee9"
     },
     "com.google.firebase.messaging": {
-      "version": "https://github.com/readyio/FirebaseMessaging.git#10.7.0",
+      "version": "https://github.com/readyio/FirebaseMessaging.git#11.9.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.google.firebase.app": "10.7.0"
+        "com.google.firebase.app": "11.9.0"
       },
-      "hash": "05fd7819a45cd00f88fb45e2b97c46feca51f492"
+      "hash": "c421bb6656cdd88df4571170d3ddaae83ff39ff0"
     },
     "com.unity.collab-proxy": {
       "version": "2.0.4",
@@ -173,164 +173,164 @@
       "hash": "8ccd3b61397a34c6bc161d1b5ad35f8c1db43f02"
     },
     "io.getready.rgn.achievement": {
-      "version": "https://github.com/readyio/RGNAchievement.git#0.9.2",
+      "version": "https://github.com/readyio/RGNAchievement.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "7dd3157c6a50fb33b98c7b140c982613b040852c"
+      "hash": "89a3b7a10ef65cfc3f13f7001f75977c765b1145"
     },
     "io.getready.rgn.analytics": {
-      "version": "https://github.com/readyio/RGNAnalytics.git#0.9.2",
+      "version": "https://github.com/readyio/RGNAnalytics.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "8b6117f23023e15b13ec6e5979451034fa6603bb"
+      "hash": "1985d75c446decff89013b6ddca837fc1d2d5d52"
     },
     "io.getready.rgn.core": {
-      "version": "https://github.com/readyio/RGNCore.git#0.9.2",
+      "version": "https://github.com/readyio/RGNCore.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c374c9e947dbf281a0817789b8112dcfa93552c9"
+      "hash": "5edd80f3321eaa7a96612cc6035c00ff3b786d98"
     },
     "io.getready.rgn.currency": {
-      "version": "https://github.com/readyio/RGNCurrency.git#0.9.2",
+      "version": "https://github.com/readyio/RGNCurrency.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "17b4bc4dc455ebb650e9b6f629db39655b0f47f7"
+      "hash": "25d688cbc27f80e45cb552f457f13abbd17584a0"
     },
     "io.getready.rgn.gamepass": {
-      "version": "https://github.com/readyio/RGNGamePass.git#0.9.2",
+      "version": "https://github.com/readyio/RGNGamePass.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "6a6d6a3f7696ea1d3c1753049f88404eaa7908d6"
+      "hash": "e92561d6108b54aaa4124511439515e020df8ee3"
     },
     "io.getready.rgn.gameprogress": {
-      "version": "https://github.com/readyio/RGNGameProgress.git#0.9.2",
+      "version": "https://github.com/readyio/RGNGameProgress.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2",
-        "io.getready.rgn.userprofile": "0.9.2",
-        "io.getready.rgn.currency": "0.9.2"
+        "io.getready.rgn.core": "0.10.0",
+        "io.getready.rgn.userprofile": "0.10.0",
+        "io.getready.rgn.currency": "0.10.0"
       },
-      "hash": "abf5f993098331da423cdd222f164bfd537437d2"
+      "hash": "20afcc3fd63c085b353597939d8920e61efb0cba"
     },
     "io.getready.rgn.impl.firebase": {
-      "version": "https://github.com/readyio/RGNImplFirebase.git#0.9.2",
+      "version": "https://github.com/readyio/RGNImplFirebase.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "a1f02ac5f8520195b962ddddc5e177e198ccfe64"
+      "hash": "dbf2a6c3d7250856eb8aa5fc70edd12617d2ca4f"
     },
     "io.getready.rgn.inventory": {
-      "version": "https://github.com/readyio/RGNInventory.git#0.9.2",
+      "version": "https://github.com/readyio/RGNInventory.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2",
-        "io.getready.rgn.virtualitems": "0.9.2",
-        "io.getready.rgn.currency": "0.9.2"
+        "io.getready.rgn.core": "0.10.0",
+        "io.getready.rgn.virtualitems": "0.10.0",
+        "io.getready.rgn.currency": "0.10.0"
       },
-      "hash": "77732288a4f73155e39faecb39129b9e4b9ed21c"
+      "hash": "08606f0ca0d8bee88825ada81c219cda77370002"
     },
     "io.getready.rgn.leaderboard": {
-      "version": "https://github.com/readyio/RGNLeaderboard.git#0.9.2",
+      "version": "https://github.com/readyio/RGNLeaderboard.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2",
-        "io.getready.rgn.userprofile": "0.9.2"
+        "io.getready.rgn.core": "0.10.0",
+        "io.getready.rgn.userprofile": "0.10.0"
       },
-      "hash": "18d2591ec8b96019c07d7906791dd2fff6cc5b36"
+      "hash": "f23229819640b8014826c8251eb55bfe7e77890f"
     },
     "io.getready.rgn.matchmaking": {
-      "version": "https://github.com/readyio/RGNMatchmaking.git#0.9.2",
+      "version": "https://github.com/readyio/RGNMatchmaking.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "40ce275e90312310636b49b7d2b4162469f9a951"
+      "hash": "a62a92c8bf1ac3c54f5ce403412bac441982df88"
     },
     "io.getready.rgn.messaging": {
-      "version": "https://github.com/readyio/RGNMessaging.git#0.9.2",
+      "version": "https://github.com/readyio/RGNMessaging.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "6690d5e5116b62edc1ec321837cfe69d7e7ffb79"
+      "hash": "543d6eec6ee95c4967e009c433227dbba4a802b2"
     },
     "io.getready.rgn.signin.email": {
-      "version": "https://github.com/readyio/RGNSignInEmail.git#0.9.2",
+      "version": "https://github.com/readyio/RGNSignInEmail.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "b9017f6642a62c53cfb72f6fe4edfda1043eb272"
+      "hash": "4522eed745f02fd0a9ae79e07181d29af387c430"
     },
     "io.getready.rgn.signin.guest": {
-      "version": "https://github.com/readyio/RGNSignInGuest.git#0.9.2",
+      "version": "https://github.com/readyio/RGNSignInGuest.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "e6f0ab5dcfbd28415b1bb28b07e850a88f71eeab"
+      "hash": "e0ef7e5b6c50e5a0c6058f3221bc4a9ef61dee54"
     },
     "io.getready.rgn.store": {
-      "version": "https://github.com/readyio/RGNStore.git#0.9.2",
+      "version": "https://github.com/readyio/RGNStore.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2",
-        "io.getready.rgn.virtualitems": "0.9.2",
-        "io.getready.rgn.inventory": "0.9.2",
-        "io.getready.rgn.currency": "0.9.2"
+        "io.getready.rgn.core": "0.10.0",
+        "io.getready.rgn.virtualitems": "0.10.0",
+        "io.getready.rgn.inventory": "0.10.0",
+        "io.getready.rgn.currency": "0.10.0"
       },
-      "hash": "5756c2de071a527388b066864b57d4520f157532"
+      "hash": "a6ee28a4c24790c9a06685300f21631e6aab96b8"
     },
     "io.getready.rgn.userprofile": {
-      "version": "https://github.com/readyio/RGNUserProfile.git#0.9.2",
+      "version": "https://github.com/readyio/RGNUserProfile.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2",
-        "io.getready.rgn.currency": "0.9.2"
+        "io.getready.rgn.core": "0.10.0",
+        "io.getready.rgn.currency": "0.10.0"
       },
-      "hash": "598a8a0449489a1da4dcd7c2494246d278de01ab"
+      "hash": "e5e268a8354b9dcf4cdd02c4af954862ff4d03f7"
     },
     "io.getready.rgn.virtualitems": {
-      "version": "https://github.com/readyio/RGNVirtualItems.git#0.9.2",
+      "version": "https://github.com/readyio/RGNVirtualItems.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "74ba9b571c0a7804ac6fe37424ad0b79c498ce3b"
+      "hash": "ed71d2b10852dd445b81649c745348336e9743e9"
     },
     "io.getready.rgn.wallets": {
-      "version": "https://github.com/readyio/RGNWallets.git#0.9.2",
+      "version": "https://github.com/readyio/RGNWallets.git#0.10.0",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "io.getready.rgn.core": "0.9.2"
+        "io.getready.rgn.core": "0.10.0"
       },
-      "hash": "5da25d0b40007fd1ed10f6e4a50447c5dbfd1a92"
+      "hash": "9b72e3c043a4ddd45e0e9b809204fcc9f1bfe2af"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
