@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164026f55f87b4a4b9395d7d17454e48, type: 3}
   m_Name: ApplicationStore
   m_EditorClassIdentifier: 
-  RGNProjectId: jgn5SmoqTlnmq2KtLNgC
-  RGNApiKey: 65e514b1955f3c0448216386c629725462afb17450a3858b8244277f379463be
+  RGNProjectId: acaeb095adaba6aff492afacb0f38ab58d8fa682
+  RGNApiKey: f5f9f3f0f7f2f9f7a2f7f3f8f6f3f4f5f7f4a4f4f0f5a3f0f8f4f4a7f2a2f1f5f7f3a0a7a3f0f6f5f4f1a0f2f9f4f9a3f9f3f5f5f3f6f6a7f2f6f8f5f7f2a3a4
   iosAppID: 
   appLinkPrefix: 
   RGNEnvironment: 0
