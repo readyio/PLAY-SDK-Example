@@ -50,6 +50,7 @@ public class ImportPackageSamples
                 CopyDirectory(sampleFullPath, destinationPath);
             }
         }
+        AssetDatabase.Refresh();
 
         // Find and open the UIRootScene scene file
         string[] allSceneFiles = Directory.GetFiles(samplesPath, "*.unity", SearchOption.AllDirectories);
