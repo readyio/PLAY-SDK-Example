@@ -18,6 +18,13 @@ Function UpdateVersion($newVersion) {
   Write-Output "Updated manifest.json from version $oldVersion to $newVersion in $currentBranch branch."
   Read-Host "Press Enter to continue..."
   
+  # Delete the Assets/Samples folder
+  $samplesFolder = "$sdkRepository/Assets/Samples"
+  if (Test-Path $samplesFolder) {
+    Remove-Item -Path $samplesFolder -Recurse -Force
+    Write-Output "Deleted $samplesFolder."
+  }
+
   # Get Unity Version
   $projectVersionPath = Join-Path -Path $sdkRepository -ChildPath "ProjectSettings/ProjectVersion.txt"
   $unityVersion = Get-Content $projectVersionPath | Select-Object -First 1 | ForEach-Object { $_ -replace "m_EditorVersion: ", "" }
