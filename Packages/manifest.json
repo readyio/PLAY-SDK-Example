@@ -26,6 +26,7 @@
     "io.getready.rgn.impl.firebase": "https://github.com/readyio/RGNImplFirebase.git#0.12.0-dev.576",
     "io.getready.rgn.inventory": "https://github.com/readyio/RGNInventory.git#0.12.0-dev.576",
     "io.getready.rgn.leaderboard": "https://github.com/readyio/RGNLeaderboard.git#0.12.0-dev.576",
+    "io.getready.rgn.marketplace": "https://github.com/readyio/RGNMarketplace.git#0.12.0-dev.576",
     "io.getready.rgn.matchmaking": "https://github.com/readyio/RGNMatchmaking.git#0.12.0-dev.576",
     "io.getready.rgn.messaging": "https://github.com/readyio/RGNMessaging.git#0.12.0-dev.576",
     "io.getready.rgn.signin.email": "https://github.com/readyio/RGNSignInEmail.git#0.12.0-dev.576",
