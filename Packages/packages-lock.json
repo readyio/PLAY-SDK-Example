@@ -256,6 +256,15 @@
       },
       "hash": "b9fdcd4c7761a0bc3f1d640d68062c0815fff053"
     },
+    "io.getready.rgn.marketplace": {
+      "version": "https://github.com/readyio/RGNMarketplace.git#0.11.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "io.getready.rgn.core": "0.11.0"
+      },
+      "hash": "011460e814e6e6320381b92e80c6e11d597aab7a"
+    },
     "io.getready.rgn.matchmaking": {
       "version": "https://github.com/readyio/RGNMatchmaking.git#0.11.0",
       "depth": 0,
