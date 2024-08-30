@@ -66,7 +66,7 @@ namespace RGN.Samples
         private Task ReloadVirtualItemsAsync()
         {
             DisposeVirtualItems();
-            return LoadItemsAsync(string.Empty);
+            return LoadItemsAsync(default);
         }
         private void DisposeVirtualItems()
         {
@@ -82,14 +82,14 @@ namespace RGN.Samples
         }
         private async void OnLoadMoreItemsButtonAsync()
         {
-            string lastLoadedVirtualItemId = string.Empty;
+            long lastLoadedVirtualItemId = default;
             if (_virtualItems.Count > 0)
             {
-                lastLoadedVirtualItemId = _virtualItems[_virtualItems.Count - 1].Id;
+                lastLoadedVirtualItemId = _virtualItems[_virtualItems.Count - 1].UpdatedAt;
             }
             await LoadItemsAsync(lastLoadedVirtualItemId);
         }
-        private async Task LoadItemsAsync(string startAfter)
+        private async Task LoadItemsAsync(long startAfter)
         {
             SetUIInteractable(false);
             _triedToLoad = true;

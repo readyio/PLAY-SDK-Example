@@ -10,6 +10,7 @@ namespace RGN.Samples
     internal sealed class VirtualItemUI : MonoBehaviour, System.IDisposable
     {
         public string Id { get => _virtualItem.id; }
+        public long UpdatedAt {  get => _virtualItem.updatedAt; }
 
         [SerializeField] private RectTransform _rectTransform;
         [SerializeField] private TextMeshProUGUI _idText;

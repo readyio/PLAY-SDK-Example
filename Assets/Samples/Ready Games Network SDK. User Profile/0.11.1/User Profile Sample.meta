@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/Ready Games Network SDK. User Profile/0.11.1/User Profile Sample.meta
 guid: c6e90d99831cd444f8b651b62ddef9d5
+========
+guid: 89563e4eccca52b48aa098b6191e2505
+>>>>>>>> dev:Assets/Samples/Ready Games Network SDK. User Profile/0.13.0/User Profile Sample.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

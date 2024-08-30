@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/Ready Games Network SDK. Currency/0.11.1.meta
 guid: 4845e1c173dc56e46a0c4305900ebec1
+========
+guid: 139f1d7cac9ab154c81b5dd88363579b
+>>>>>>>> dev:Assets/Samples/Ready Games Network SDK. Currency/0.13.0.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

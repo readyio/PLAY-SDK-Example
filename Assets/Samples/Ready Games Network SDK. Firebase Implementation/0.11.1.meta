@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/Ready Games Network SDK. Firebase Implementation/0.11.1.meta
 guid: a4a3815de073a394ba26dbb5e1851c59
+========
+guid: c53e4a74ea965864aa824f93872bcb22
+>>>>>>>> dev:Assets/Samples/Ready Games Network SDK. Firebase Implementation/0.13.0.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

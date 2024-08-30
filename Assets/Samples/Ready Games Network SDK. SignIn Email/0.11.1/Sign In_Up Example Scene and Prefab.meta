@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/Ready Games Network SDK. SignIn Email/0.11.1/Sign In_Up Example Scene and Prefab.meta
 guid: fa90c929b54ba954089a32bd2f8da4bb
+========
+guid: 90982f2b0e0e702428b1d524fcbeb586
+>>>>>>>> dev:Assets/Samples/Ready Games Network SDK. SignIn Email/0.13.0/Sign In_Up Example Scene and Prefab.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

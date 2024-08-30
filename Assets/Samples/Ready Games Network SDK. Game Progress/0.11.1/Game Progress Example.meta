@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/Ready Games Network SDK. Game Progress/0.11.1/Game Progress Example.meta
 guid: d50e7b947173c7040b870d5ad5747560
+========
+guid: d7f6c178fad83be4dbb8dd9877f6ff9a
+>>>>>>>> dev:Assets/Samples/Ready Games Network SDK. Game Progress/0.13.0/Game Progress Example.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

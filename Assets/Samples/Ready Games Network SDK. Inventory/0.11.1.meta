@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/Ready Games Network SDK. Inventory/0.11.1.meta
 guid: b83765bbcd1996c4b9ec3fd0740bac4f
+========
+guid: 2a6ea4235b1d32d4ea8117a4effa2968
+>>>>>>>> dev:Assets/Samples/Ready Games Network SDK. Inventory/0.13.0.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
