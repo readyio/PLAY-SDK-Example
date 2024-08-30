@@ -66,12 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ready is leading the charge into the new age of web3 gaming with its comprehensive
-    multi-platform offerings, catering to all types of gamers. Our mission is to
-    empower each developer, creator, and player with the benefits of collective ownership
-    via blockchain technology, token economics, and cross-game NFT assets. These
-    are made accessible through intuitive dashboards and sophisticated technologies,
-    meticulously developed by our team, designed with Unity developers in mind.
+  m_text: "PLAY\u2019s layer 3 platform offers plug-and-play infrastructures built
+    on layer 0 for seamless interoperability across blockchain networks to integrate
+    web3 functionality and NFT support into any game."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -106,7 +103,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1439,7 +1436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 744689876606642000, guid: 0d27a18b74c1fbf41a5e02cf7f4d95d6, type: 3}
       propertyPath: m_text
-      value: Ready Network Demo
+      value: PLAY Demo
       objectReference: {fileID: 0}
     - target: {fileID: 744689876606642002, guid: 0d27a18b74c1fbf41a5e02cf7f4d95d6, type: 3}
       propertyPath: m_Name
