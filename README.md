@@ -1,21 +1,25 @@
-# THE #1 WEB3 GAMING ECOSYSTEM.
-With multi-platform solutions to support every type of gaming enthusiast, Ready is spearheading the collective web3 gaming era. We give every developer, creator, and player the power of shared ownership through blockchain technology, token economy, and cross-game NFT assets, all through easy-to-use dashboards and technologies hand crafted by our team.
+# WEB3 GAMING ECOSYSTEM FOR DEVELOPERS, PLAYERS AND CREATORS
+PLAY’s layer 3 platform offers plug-and-play infrastructures built on layer 0 for seamless interoperability across blockchain networks to integrate web3 functionality and NFT support into any game.
 
-This repository contains Unity engine demo scene for RGN SDK features.
+This repository contains Unity engine demo scene for SDK features.
 
 ### Features:
 - Login or register with email
 - User profile
 - Create crypto wallet
 - Purchase NFT and in-game items
-- RGN build in or custom coins
 - User inventory
 - User display name and bio
 - Upload user avatar image
+- Virtual items
+- Achievements
+- Matchmaking
+- Leaderboards
+- NFT items marketplace
 
 ### Links
-- [RGN SDK Documentation](https://readygames.gitbook.io/ready-sdk-documentation/)
+- [SDK Documentation](https://readygames.gitbook.io/play-sdk-documentation)
 - [Developers Dashboard](https://stage-dev.ready.gg/)
 - [Discord Developers Chat](https://discord.com/invite/hZsxAVMsK9)
-- [Telegram Community](https://t.me/readygamesofficial)
-- [Other Social Links](https://linktr.ee/thereadygames)
+- [Telegram Community](https://t.me/play_communityofficial)
+- [Other Social Links](https://linktr.ee/0xplay_network)
