@@ -5,6 +5,7 @@ using RGN.Impl.Firebase;
 using RGN.Model;
 using RGN.Modules.Store;
 using RGN.Modules.VirtualItems;
+using RGN.Network;
 using RGN.UI;
 using RGN.Utility;
 using TMPro;
@@ -270,6 +271,22 @@ namespace RGN.Samples
                 if (_virtualItemsExampleClient != null)
                 {
                     await _virtualItemsExampleClient.UpdateUserProfileAsync();
+                }
+            }
+            catch (HttpRequestException httpEx)
+            {
+                failed = true;
+                Debug.LogException(httpEx);
+                if (httpEx.Code == "failed-precondition-not-enough-currencies")
+                {
+                    ToastMessage.I.ShowError("Not enough coins! Please purchase more!");
+                } else if (httpEx.Code == "failed-precondition-offer-not-available")
+                {
+                    ToastMessage.I.ShowError("The offer is not more availabe. Please try again later");
+                }
+                else
+                {
+                    ToastMessage.I.ShowError(httpEx.Message);
                 }
             }
             catch (System.Exception ex)

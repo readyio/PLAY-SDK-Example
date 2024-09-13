@@ -125,7 +125,7 @@ namespace RGN.Samples
         }
         void IInventoryExampleClient.OpenMarketpace()
         {
-            MarketplaceModule.I.OpenMarketpace();
+            MarketplaceModule.I.OpenMarketplace();
         }
 
         private void SetUserLoggedIn(bool loggedInWithEmail)
